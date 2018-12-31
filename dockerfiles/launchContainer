@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+docker run -d \
+    -p 8081:8081 \
+    -p 8080:8080 \
+    -p 7077:7077 \
+    -p 4040:4040 \
+    -p 17765:17765 \
+    -v $HOME/.ivy2/cache:/root/.ivy2/cache \
+    -v $HOME/.sbt:/root/.sbt \
+    -v $HOME/.m2:/root/.m2 \
+    -v $HOME/datacanvas:/root/datacanvas \
+    -v $HOME/Code/zetinsight/dandelion.git:/mnt/dandelion \
+    sparkdevbox:0.1 

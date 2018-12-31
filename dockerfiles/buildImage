@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+rm -f ./sparkbox/zetdata_dandelion-0.1.jar
+cp ../target/scala-2.11/zetdata_dandelion-0.1.jar ./sparkbox/zetdata_dandelion-0.1.jar
+docker build -t sparkbox:0.1 sparkbox
